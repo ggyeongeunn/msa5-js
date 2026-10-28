@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #454545;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1;
+}
+input,
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.search {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+input {
+  border: 1px solid #cdd1d5;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 4px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+button {
+  width: 180px;
+  padding: 12px 0;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #333;
+  color: #f4f5f6;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #101010;
+}
+img {
+  display: block;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+.card {
+  box-shadow: 0 0 4px #f0f0f0;
+}
+.card-img {
+  aspect-ratio: 1 / 0.55;
+  /* padding-top : 80%; -> aspect-ratio와 같은 기능 */
+  background-image: url('../img/example.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-text{
+  font-size: 15px;
+  padding: 10px;
+}
