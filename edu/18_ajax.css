@@ -66,6 +66,12 @@ img {
 .card {
   box-shadow: 0 0 4px #f0f0f0;
 }
+.card-container h3 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 24px;
+  color: #a0a0a0;
+}
 .card-img {
   aspect-ratio: 1 / 0.55;
   /* padding-top : 80%; -> aspect-ratio와 같은 기능 */
